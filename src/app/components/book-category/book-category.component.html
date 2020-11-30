@@ -1,0 +1,27 @@
+<div class="row text-center">
+  <div class="col-lg-3 col-md-6 mb-4" *ngFor="let book of bookList">
+    <div class="card h-100">
+      <img class="card-img-top" src="https://image3.mouthshut.com/images/imagesp/925868055s.jpg" height="300px" alt="">
+      <div class="card-body">
+        <h2><a href="#">{{book.name}}</a> </h2>
+        <h4>{{book.price | currency: 'INR'}}</h4>
+        <p class="card-text text-truncate">{{book.description}}</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-primary">Find Out More!</a>
+      </div>
+    </div>
+  </div>
+
+<!-- <div>
+    <div class="container-fluid">
+     <div class="list-group">
+      <a  class = "list-group-item" *ngFor="let cat of category"
+            routerLink= "{{cat.id}}"
+            routerLinkActive = "bg-primary text-white font-weight-bold">{{cat.name}}</a>
+     </div>
+   </div> -->
+<!-- <ul class="list-group">
+    
+    <li *ngFor="let cat of category" class="list-group-item">{{cat.name}}</li>
+</ul> --> 

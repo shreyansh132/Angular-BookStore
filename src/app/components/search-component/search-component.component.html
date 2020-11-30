@@ -1,0 +1,11 @@
+<div>
+  <input type="text" #searchInput [(ngModel)] = "search" 
+   id = "form_name" (ngModelChange)="searchBooks(searchInput.value)" 
+  class="form-control" placeholder="Search Books">
+</div>
+ 
+    <!-- <div class="col-md-2">
+        <button type="submit"
+        (click) = "searchBooks(searchInput.value)"
+        class="btn btn-primary">Search</button>
+      </div> -->
